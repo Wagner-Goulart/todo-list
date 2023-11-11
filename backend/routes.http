@@ -1,0 +1,47 @@
+GET http://localhost:3000/user
+
+###
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name": "Natasha Goulart",
+    "email": "teste6@test.com"
+}
+
+###
+DELETE  http://localhost:3000/user/f5949661-e02f-4d05-92d0-02b5b69677ea
+
+###
+PUT http://localhost:3000/user/291e0c6a-adfe-40f5-9e7f-b9bf2c00a264
+Content-Type: application/json
+
+{   
+    "name": "Natashaaa GouuuLart",
+    "email": "teste5@test.com"
+}
+
+### / TASKS
+POST http://localhost:3000/task
+Content-Type: application/json
+
+{
+    "description" : "Lavar a Louça",
+    "deadline": "12/12/2023"
+}
+
+###
+GET http://localhost:3000/task
+
+###
+DELETE http://localhost:3000/task/771f61a4-3133-4f61-acab-e28399fef906
+
+###
+PUT http://localhost:3000/task/771f61a4-3133-4f61-acab-e28399fef906
+Content-Type:  application/json
+
+{
+    "isCompleted": false,
+    "description": "Contiunar lavando a louça",
+    "deadline": "11/15/2023"
+}
