@@ -6,18 +6,19 @@ Content-Type: application/json
 
 {
     "name": "Natasha Goulart",
-    "email": "teste6@test.com"
+    "email": "teste0@test.com"
+   
 }
 
 ###
-DELETE  http://localhost:3000/user/f5949661-e02f-4d05-92d0-02b5b69677ea
+DELETE  http://localhost:3000/user/28a26132-0d79-4b4d-bb53-c874177b6254
 
 ###
-PUT http://localhost:3000/user/291e0c6a-adfe-40f5-9e7f-b9bf2c00a264
+PUT http://localhost:3000/user/28a26132-0d79-4b4d-bb53-c874177b6254
 Content-Type: application/json
 
 {   
-    "name": "Natashaaa GouuuLart",
+    "name": "Natasha Goulart Silveira",
     "email": "teste5@test.com"
 }
 
@@ -26,7 +27,7 @@ POST http://localhost:3000/task
 Content-Type: application/json
 
 {
-    "description" : "Lavar a Louça",
+    "description" : "Lavar a roupa 3",
     "deadline": "12/12/2023"
 }
 
@@ -34,14 +35,14 @@ Content-Type: application/json
 GET http://localhost:3000/task
 
 ###
-DELETE http://localhost:3000/task/771f61a4-3133-4f61-acab-e28399fef906
+DELETE http://localhost:3000/task/8bfe6b44-958a-442c-9e9f-10c2faa657f2
 
 ###
-PUT http://localhost:3000/task/771f61a4-3133-4f61-acab-e28399fef906
+PUT http://localhost:3000/task/c89bc1f6-a2c2-449e-a0c4-8612bcda451d
 Content-Type:  application/json
 
 {
-    "isCompleted": false,
-    "description": "Contiunar lavando a louça",
-    "deadline": "11/15/2023"
+    "isCompleted": true,
+    "description": "Estender a roupa",
+    "deadline": "11/20/2023"
 }
