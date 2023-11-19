@@ -1,7 +1,5 @@
 import { fastify } from "fastify";
 import { userRoutes } from "./routes/userRoutes";
-import { z } from "zod";
-import { prisma } from "./lib/prisma";
 import { taskRoutes } from "./routes/taskRoutes";
 
 const server = fastify();

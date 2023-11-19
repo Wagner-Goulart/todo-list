@@ -1,0 +1,8 @@
+{
+    "testEnvironment": "node",
+    "testMatch": [ "**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+    "preset": "ts-jest",
+    "transform": {
+        "^.+\\.tsx?$" : "ts-jest"
+      }
+}
