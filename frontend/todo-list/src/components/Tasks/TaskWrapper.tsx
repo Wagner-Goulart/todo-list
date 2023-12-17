@@ -13,6 +13,7 @@ const TaskList = styled.ul`
   width: 60vw;
   min-width: 300px;
   font-size: 2rem;
+  margin-top: 1rem;
 
   @media (max-width: 330px) {
     font-size: 1.6rem;

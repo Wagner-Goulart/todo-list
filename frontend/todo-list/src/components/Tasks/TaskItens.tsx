@@ -19,7 +19,6 @@ const StyledTaskItem = styled.li`
   justify-content: space-around;
   align-items: center;
   padding: 20px;
-  margin-bottom: 10px;
   border-radius: 0.5rem;
 
   @media (max-width: 330px) {
