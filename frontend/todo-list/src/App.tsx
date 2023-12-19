@@ -1,15 +1,33 @@
-// import { Home } from "./pages/Home";
-// import { NavBar } from "./pages/NavBar";
+import { Home } from "./pages/Home";
+import { NavBar } from "./pages/NavBar";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-import CustomizedDialogs  from "./components/Modal/Modal";
-
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#eaf1e9",
+    },
+    secondary: {
+      main: "#000",
+    },
+  },
+  typography: {
+    htmlFontSize: 10,
+    fontSize: 16,
+    fontFamily: "Roboto",
+    fontWeightLight: 300,
+    fontWeightMedium: 500,
+    fontWeightBold: 700,
+  },
+});
 
 function App() {
   return (
     <>
-    {/* <NavBar/>
-    <Home/> */}
-    <CustomizedDialogs />
+      <ThemeProvider theme={theme}>
+        <NavBar />
+        <Home />
+      </ThemeProvider>
     </>
   );
 }

@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { SearchInput } from "../components/Input/SearchInput";
+import { Modal } from "../components/Modal/Modal";
 
 function NavBar(){
     return (
         <StyledNavBar>
-            <SearchInput/>
+          <Modal/>
         </StyledNavBar>
     )
 }
