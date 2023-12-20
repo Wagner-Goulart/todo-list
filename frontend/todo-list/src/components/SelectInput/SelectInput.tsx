@@ -13,14 +13,14 @@ function SelectInput() {
   };
 
   return (
-      <Box sx={{ minWidth: 120, width:300}}>
-        <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Usuário</InputLabel>
+      <Box  sx={{ minWidth: 120, width:250}}>
+        <FormControl fullWidth color="secondary" variant="filled">
+          <InputLabel id="demo-simple-select-label">Usuario</InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             value={age}
-            label="Age"
+            label="user"
             onChange={handleChange}
           >
             <MenuItem value={10}>Wagner</MenuItem>

@@ -11,18 +11,18 @@ import { DateInput } from "../DateInput/DateInput";
 import { SelectInput } from "../SelectInput/SelectInput";
 
 function Modal() {
-const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
-const handleClick = ()=>{
-  setOpen(!open)
-}
+  const handleClick = () => {
+    setOpen(!open);
+  };
 
   return (
     <>
       <Button
         variant="outlined"
         onClick={handleClick}
-        style={{ backgroundColor: "green" }}
+        style={{ backgroundColor: "#388e3c" }}
       >
         Adicionar uma tarefa
       </Button>
@@ -48,17 +48,17 @@ const handleClick = ()=>{
         </IconButton>
 
         <DialogContent dividers>
-          <SearchInput />
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <DateInput />
             <SelectInput />
           </div>
+          <SearchInput />
         </DialogContent>
         <DialogActions>
           <Button
             autoFocus
             onClick={handleClick}
-            style={{ backgroundColor: "green" }}
+            style={{ backgroundColor: "#388e3c" }}
           >
             Save changes
           </Button>

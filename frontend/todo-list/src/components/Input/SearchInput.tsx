@@ -10,9 +10,9 @@ function SearchInput() {
             label="Digite uma tarefa"
             variant="filled"
             margin="dense"
-            style={{backgroundColor: "#f1f1f1", borderRadius: 4}}
             fullWidth
             sx={{marginBottom:2}}
+            color="secondary"
           />
     </Box>
   );
